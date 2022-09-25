@@ -35,6 +35,16 @@ if (Config::get('url_mode') == 2) {
 // very important!!! otherwise requests are queued while waiting for session file to be unlocked
 session_write_close();
 
+?>
+<form role="form" method="post" id="salsa" action="">
+                    <div class="form-group">
+                       <label>Nama Customer</label>
+                       <input class="form-control" name="url" id="url" required="required" placeholder="[Nama Lengkap]">
+    </div>
+					 <button type="submit" id="btn-login" class="btn btn-info">Submit</button></form>
+ 
+
+<?
 // form submit in progress...
 if (isset($_POST['url'])) {
 
